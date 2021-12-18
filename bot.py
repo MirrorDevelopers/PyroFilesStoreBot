@@ -90,7 +90,7 @@ async def start(bot, cmd):
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Something went Wrong. Contact my [Support Group](https://t.me/AnkiSupport_Official).",
+					text="Something went Wrong. Contact my [Support Group](https://t.me/SlapTaps).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -102,8 +102,8 @@ async def start(bot, cmd):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Support Group", url="https://t.me/AnkiSupport_Official"),
-						InlineKeyboardButton("Updates Channel", url="https://t.me/ankivectorUpdates")
+						InlineKeyboardButton("Support Group", url="https://t.me/SlapTaps"),
+						InlineKeyboardButton("Updates Channel", url="https://t.me/SlapTap")
 					],
 					[
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -146,7 +146,7 @@ async def start(bot, cmd):
 			except Exception:
 				await bot.send_message(
 					chat_id=cmd.from_user.id,
-					text="Something went Wrong. Contact my [Support Group](https://t.me/AnkiSupport_Official).",
+					text="Something went Wrong. Contact my [Support Group](https://t.me/SlapTaps).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -171,7 +171,7 @@ async def main(bot, message):
 				f"**Your File Stored in my Database!**\n\nHere is the Permanent Link of your file: {share_link} \n\nJust Click the link to get your file!",
 				parse_mode="Markdown",
 				reply_markup=InlineKeyboardMarkup(
-					[[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("Support Group", url="https://t.me/AnkiSupport_Official"), InlineKeyboardButton("Updates Channel", url="https://t.me/ankivectorUpdates")]]
+					[[InlineKeyboardButton("Open Link", url=share_link)], [InlineKeyboardButton("Support Group", url="https://t.me/SlapTaps"), InlineKeyboardButton("Updates Channel", url="https://t.me/SlapTap")]]
 				),
 				disable_web_page_preview=True
 			)
@@ -288,7 +288,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Support Group", url="https://t.me/AnkiSupport_Official")
+						InlineKeyboardButton("Support Group", url="https://t.me/SlapTaps")
 					],
 					[
 						InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -305,7 +305,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Updates", url="https://t.me/ankivectorUpdates")
+						InlineKeyboardButton("Updates", url="https://t.me/SlapTap")
 					],
 					[
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -322,8 +322,8 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Support Group", url="https://t.me/AnkiSupport_Official"),
-						InlineKeyboardButton("Bots Channel", url="https://t.me/ankivectorUpdates")
+						InlineKeyboardButton("Support Group", url="https://t.me/SlapTaps"),
+						InlineKeyboardButton("Bots Channel", url="https://t.me/SlapTap")
 					],
 					[
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -339,7 +339,7 @@ async def button(bot, cmd: CallbackQuery):
 				user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
 				if user.status == "kicked":
 					await cmd.message.edit(
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/AnkiSupport_Official).",
+						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/SlapTaps).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -362,7 +362,7 @@ async def button(bot, cmd: CallbackQuery):
 				return
 			except Exception:
 				await cmd.message.edit(
-					text="Something went Wrong. Contact my [Support Group](https://t.me/AnkiSupport_Official).",
+					text="Something went Wrong. Contact my [Support Group](https://t.me/SlapTaps).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -374,8 +374,8 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Support Group", url="https://t.me/SLTBrecLand"),
-						InlineKeyboardButton("Channel", url="https://t.me/windows_softw")
+						InlineKeyboardButton("Support Group", url="https://t.me/SlapTaps"),
+						InlineKeyboardButton("Channel", url="https://t.me/SlapTap")
 					],
 					[
 						InlineKeyboardButton("About Bot", callback_data="aboutbot"),
